@@ -12,7 +12,8 @@ from PyQt5 import QtCore, QtWidgets, uic
 from PyQt5.QtWidgets import QFileDialog, QMessageBox
 from skimage.filters import sobel
 from skimage.measure import regionprops
-from skimage.morphology import opening, watershed, disk, erosion
+from skimage.morphology import opening, disk, erosion
+from skimage.segmentation import watershed
 
 from UI_files.Atom_Seg_Ui import Ui_MainWindow
 from utils.utils import GetIndexRangeOfBlk, load_model, PIL2Pixmap, map01
